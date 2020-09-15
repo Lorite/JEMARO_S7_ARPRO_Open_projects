@@ -1,0 +1,4 @@
+/home/ecn/windowsshare/Open_projects/debug/CMakeFiles/edit_cache.dir
+/home/ecn/windowsshare/Open_projects/debug/CMakeFiles/rebuild_cache.dir
+/home/ecn/windowsshare/Open_projects/debug/CMakeFiles/ex2_1_find_number.dir
+/home/ecn/windowsshare/Open_projects/debug/CMakeFiles/Open_projects.dir

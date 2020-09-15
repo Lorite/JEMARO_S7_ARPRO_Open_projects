@@ -7,3 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(Open_projects main.cpp)
 add_executable(ex2_1_find_number ex2_1_find_number.cpp)
+add_executable(ex2_1_find_number_reverse ex2_1_find_number_reverse.cpp)
+add_executable(ex2_2_rock_paper_scissors ex2_2_rock_paper_scissors.cpp)

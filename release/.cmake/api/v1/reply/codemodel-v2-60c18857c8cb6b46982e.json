@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Open_projects",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Open_projects::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Open_projects-Release-1fd9e8bbef34ece876bc.json",
+					"name" : "Open_projects",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex2_1_find_number::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex2_1_find_number-Release-5e015cd4de5382e6ec16.json",
+					"name" : "ex2_1_find_number",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex2_1_find_number_reverse::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex2_1_find_number_reverse-Release-351e969cd7df5253207e.json",
+					"name" : "ex2_1_find_number_reverse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex2_2_rock_paper_scissors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex2_2_rock_paper_scissors-Release-dd1e2f254e53073746db.json",
+					"name" : "ex2_2_rock_paper_scissors",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ecn/windowsshare/Open_projects/release",
+		"source" : "/home/ecn/windowsshare/Open_projects"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

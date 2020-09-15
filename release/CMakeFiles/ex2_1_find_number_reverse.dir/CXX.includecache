@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ecn/windowsshare/Open_projects/ex2_1_find_number_reverse.cpp
+ex2_1_find_number_reverse.h
+/home/ecn/windowsshare/Open_projects/ex2_1_find_number_reverse.h
+iostream
+-
+random
+-
+
+/home/ecn/windowsshare/Open_projects/ex2_1_find_number_reverse.h
+

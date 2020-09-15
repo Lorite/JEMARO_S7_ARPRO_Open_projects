@@ -1,0 +1,6 @@
+/home/ecn/windowsshare/Open_projects/release/CMakeFiles/edit_cache.dir
+/home/ecn/windowsshare/Open_projects/release/CMakeFiles/ex2_1_find_number_reverse.dir
+/home/ecn/windowsshare/Open_projects/release/CMakeFiles/rebuild_cache.dir
+/home/ecn/windowsshare/Open_projects/release/CMakeFiles/ex2_1_find_number.dir
+/home/ecn/windowsshare/Open_projects/release/CMakeFiles/ex2_2_rock_paper_scissors.dir
+/home/ecn/windowsshare/Open_projects/release/CMakeFiles/Open_projects.dir

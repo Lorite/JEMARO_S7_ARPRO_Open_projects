@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Open_projects"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2_1_find_number_reverse">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/ex2_1_find_number_reverse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 ex2_1_find_number_reverse"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2_1_find_number_reverse/fast">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/ex2_1_find_number_reverse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 ex2_1_find_number_reverse/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2_1_find_number">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/ex2_1_find_number" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 ex2_1_find_number"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2_1_find_number/fast">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/ex2_1_find_number" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 ex2_1_find_number/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2_2_rock_paper_scissors">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/ex2_2_rock_paper_scissors" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 ex2_2_rock_paper_scissors"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2_2_rock_paper_scissors/fast">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/ex2_2_rock_paper_scissors" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 ex2_2_rock_paper_scissors/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Open_projects">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/Open_projects" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 Open_projects"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Open_projects/fast">
+				<Option output="/home/ecn/windowsshare/Open_projects/release/Open_projects" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ecn/windowsshare/Open_projects/release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 Open_projects/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/ecn/windowsshare/Open_projects/release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/ex2_1_find_number.cpp">
+			<Option target="ex2_1_find_number"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/ex2_1_find_number.h">
+			<Option target="ex2_1_find_number"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/ex2_1_find_number_reverse.cpp">
+			<Option target="ex2_1_find_number_reverse"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/ex2_1_find_number_reverse.h">
+			<Option target="ex2_1_find_number_reverse"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/ex2_2_rock_paper_scissors.cpp">
+			<Option target="ex2_2_rock_paper_scissors"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/ex2_2_rock_paper_scissors.h">
+			<Option target="ex2_2_rock_paper_scissors"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/main.cpp">
+			<Option target="Open_projects"/>
+		</Unit>
+		<Unit filename="/home/ecn/windowsshare/Open_projects/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

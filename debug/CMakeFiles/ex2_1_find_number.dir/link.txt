@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ex2_1_find_number.dir/ex2_1_find_number.cpp.o  -o ex2_1_find_number 
