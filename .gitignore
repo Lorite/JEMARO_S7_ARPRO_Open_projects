@@ -52,3 +52,6 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc 
+
+[url "git@github.com:"]
+ insteadOf = https://github.com/
