@@ -1,3 +1,10 @@
 project(battleship)
 
-add_executable(main main.cpp)
+include_directories(include)
+
+add_executable(battleship
+    main.cpp
+    include/player.h    src/player.cpp
+    include/boat.h
+    include/cell.h
+ )

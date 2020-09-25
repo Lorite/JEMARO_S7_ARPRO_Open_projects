@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
+../include/cell.h
+
 ../include/player.h
+array
+-
+cell.h
+-
 
 /media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp
-
-/media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp
 player.h
+-
+iostream
+-
+string
+-
+regex
+-
+stdlib.h
 -
 

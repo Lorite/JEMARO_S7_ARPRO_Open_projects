@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp" "/media/sf_ARPRO_Labs/Open_projects/Battleship/build/CMakeFiles/main.dir/main.o"
-  "/media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp" "/media/sf_ARPRO_Labs/Open_projects/Battleship/build/CMakeFiles/main.dir/src/player.o"
+  "/media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp" "/media/sf_ARPRO_Labs/Open_projects/Battleship/build/CMakeFiles/battleship.dir/main.o"
+  "/media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp" "/media/sf_ARPRO_Labs/Open_projects/Battleship/build/CMakeFiles/battleship.dir/src/player.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
