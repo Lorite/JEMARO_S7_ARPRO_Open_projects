@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/ex2_1_find_number_reverse.cpp
+ex2_1_find_number_reverse.h
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/ex2_1_find_number_reverse.h
+iostream
+-
+random
+-
+
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/ex2_1_find_number_reverse.h
+

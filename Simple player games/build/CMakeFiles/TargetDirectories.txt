@@ -1,0 +1,5 @@
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/build/CMakeFiles/edit_cache.dir
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/build/CMakeFiles/ex2_2_rock_paper_scissors.dir
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/build/CMakeFiles/ex2_1_find_number_reverse.dir
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/build/CMakeFiles/rebuild_cache.dir
+/media/sf_ARPRO_Labs/Open_projects/Simple player games/build/CMakeFiles/ex2_1_find_number.dir
