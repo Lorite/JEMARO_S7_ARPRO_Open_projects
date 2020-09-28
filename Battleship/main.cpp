@@ -22,7 +22,7 @@ int main() {
                 // TODO manual boat positions
 
             } else if (tempSelection == 2) { // automatic boat positions
-                // TODO automatic boat positions
+                players.at(i).placeBoats();
 
             } else {
                 std::cout << "Error." << std::endl;
@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    std::system("clear");  // clear console
+    //std::system("clear");  // clear console
 
     // main  game loop
     while(!gameOver) {

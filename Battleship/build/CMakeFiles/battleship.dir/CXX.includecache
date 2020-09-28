@@ -6,23 +6,39 @@
 
 #IncludeRegexTransform: 
 
+../include/boat.h
+cell.h
+-
+array
+-
+vector
+-
+string
+-
+iostream
+-
+
 ../include/cell.h
+boat.h
+-
 
 ../include/player.h
 array
 -
+vector
+-
 cell.h
 -
-
-/media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp
-player.h
+boat.h
+-
+cell.h
 -
 iostream
 -
-string
+random
 -
-regex
--
-stdlib.h
+
+/media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp
+player.h
 -
 
