@@ -53,16 +53,12 @@ struct Boat {
     int getLength() {
         return length;
     }
-    void setLength(int &_length) {
+    void setLength(const int &_length) {
         length = _length;
     }
 
     std::string toString() {
-        std::string tempStr("Boat type: ");
-        tempStr.append(1, display());
-        tempStr.append(". Length: ");
-        tempStr += std::to_string(length);
-        return tempStr;
+        return "Boat type: " + std::string(1, display()) + ". Length: " + std::to_string(length);
     }
 
     static std::vector<std::pair<BoatType, int>> allBoatLengths() {
