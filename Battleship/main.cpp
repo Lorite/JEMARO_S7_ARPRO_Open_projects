@@ -76,7 +76,6 @@ int main() {
                     if (shotOK == 0)
                         std::cout << "Error. Already shot there." << std::endl;
                     else {
-                        shotOK = true;
                         if (shotOK == 1)
                             std::cout << "You hit the water." << std::endl;
                         else if (shotOK == 2)
