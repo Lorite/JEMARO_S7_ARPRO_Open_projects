@@ -3,10 +3,10 @@
 Player::Player()
 {
     // set all cells to water
-    Boat tempBoat = Boat();
+    Boat *tempBoat = new Boat(); // BAD PRACTICE - NEED TO DELETE ALLOCATED OBJ
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid.at(i).size(); j++) {
-            grid.at(i).at(j) = Cell(j, i, false, tempBoat);
+            grid.at(i).at(j) = Cell(j, i, false, *tempBoat);
         }
     }
 
@@ -21,8 +21,10 @@ void Player::placeBoats(){
 
     // create boats
     for (const auto [_boatType, _length] : Boat::allBoatLengths()) {
-        Boat tempBoat = {};
-        tempBoat.setBoatType(_boatType);
+        Boat *tempBoat = new Boat();
+        tempBoat->setBoatType(_boatType);
+        tempBoat->setLength(_length);
+        boats.push_back(tempBoat);
         bool orientationGeneratedIsVertical; // 0 = horizontal, 1 = vertical
         int cellXGenerated, cellYGenerated;
         bool posGeneratedOK = false;
@@ -53,23 +55,31 @@ void Player::placeBoats(){
         // fill positions next to generated starting pos
         if (orientationGeneratedIsVertical)
             for (int i = 0; i < _length; i++)
-                grid.at(cellYGenerated + i).at(cellXGenerated).setBoat(tempBoat);
+                grid.at(cellYGenerated + i).at(cellXGenerated).setBoat(*tempBoat);
         else
             for (int i = 0; i < _length; i++)
-                grid.at(cellYGenerated).at(cellXGenerated + i).setBoat(tempBoat);
+                grid.at(cellYGenerated).at(cellXGenerated + i).setBoat(*tempBoat);
 
-        // save bot in player
-        tempBoat.setLength(_length);
-        boats.push_back(tempBoat);
     }
 
-    for (auto boat: boats) {
-        std::cout << boat.toString() << " boat placed OK." << std::endl;
+    for (auto *boat: boats) {
+        std::cout << boat->toString() << " boat placed OK." << std::endl;
     }
     std::cout << std::endl;
 }
 
-void Player::shoot(Player otherPlayer){
+int Player::shoot(Player &otherPlayer, int posX, int posY){
+    Cell &tempCell = otherPlayer.grid.at(posY).at(posX);
+    if (tempCell.getIsHit())
+        return 0;
+    else {
+        tempCell.setIsHit(true);
+        if (tempCell.getBoat().getBoatType() == BoatType::NONE)
+            return 1;
+        else
+            return 2;
+    }
+
 
 }
 

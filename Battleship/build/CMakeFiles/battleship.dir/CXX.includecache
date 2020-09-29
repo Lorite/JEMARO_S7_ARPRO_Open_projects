@@ -38,6 +38,24 @@ iostream
 random
 -
 
+../include/utils.h
+iostream
+-
+
+/media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp
+player.h
+-
+utils.h
+-
+iostream
+-
+string
+-
+regex
+-
+stdlib.h
+-
+
 /media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp
 player.h
 -

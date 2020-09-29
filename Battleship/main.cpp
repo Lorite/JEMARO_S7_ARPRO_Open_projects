@@ -1,4 +1,5 @@
 #include <player.h>
+#include <utils.h>
 #include <iostream>
 #include <string>
 #include <regex>
@@ -18,6 +19,7 @@ int main() {
         while(tempSelection != 1 && tempSelection != 2) {
             std::cout << "Player " << i+1 <<". Enter 1 to manually place the boats or 2 to do it automatically: ";
             std::cin >> tempSelection;
+            std::cin.get();
             if (tempSelection == 1) { // manual boat positions
                 // TODO manual boat positions
 
@@ -30,13 +32,15 @@ int main() {
         }
     }
 
-    //std::system("clear");  // clear console
+    Utils::waitInputConsole();
+    std::system("clear");  // clear console
 
     // main  game loop
     while(!gameOver) {
         for (int i = 0; i < players.size(); ++i) {
             // info
-            std::cout << "PLAYER " << i+1 << " TURN." << std::endl << std::endl;
+            std::cout << "PLAYER " << i+1 << " TURN." << std::endl;
+            Utils::waitInputConsole();
 
             // display
             for (int j = 0; j < players.size(); ++j) {
@@ -49,21 +53,43 @@ int main() {
             if (!players.at(i).hasLost()) {
                 std::string tempSelection = "";
                 std::string tempRegexSelectionStr = "(\\d\\,\\d)";
-                std::regex refexSelection(tempRegexSelectionStr);
-                while(!std::regex_match(tempSelection.c_str(), refexSelection)) {
-                    std::cout << "Player " << i+1 <<" turn to shoot. Select where you want to shoot \"x,y\": ";
-                    std::cin >> tempSelection;
+                std::regex regexSelection(tempRegexSelectionStr);
+                int posXSelected, posYSelected, shotOK = 0;
+                bool regexOK = false;
+                do {
+                    do {
+                        std::cout << "Player " << i+1 <<" turn to shoot. Select where you want to shoot \"x,y\": ";
+                        std::cin >> tempSelection;
+                        std::cin.get();
 
-                    if (!std::regex_match(tempSelection.c_str(), refexSelection)) {
-                        std::cout << "Error." << std::endl;
+                        if (!std::regex_match(tempSelection.c_str(), regexSelection)) {
+                            std::cout << "Error. Bad input." << std::endl;
+                            regexOK = false;
+                        } else {
+                            posXSelected = tempSelection.at(0) - '0';
+                            posYSelected = tempSelection.back() - '0';
+                            regexOK = true;
+                        }
+                    } while(!regexOK);
+
+                    shotOK = players.at(i).shoot(players.at((i+1)%players.size()), posXSelected, posYSelected);
+                    if (shotOK == 0)
+                        std::cout << "Error. Already shot there." << std::endl;
+                    else {
+                        shotOK = true;
+                        if (shotOK == 1)
+                            std::cout << "You hit the water." << std::endl;
+                        else if (shotOK == 2)
+                            std::cout << "You hit a boat!" << std::endl;
                     }
-                }
-                players.at(i).shoot(players.at((i+1)%players.size()));
+                } while(shotOK == 0);
+
 
             } else {
                 gameOver = true;
             }
 
+            Utils::waitInputConsole();
             std::system("clear");  // clear console
         }
 

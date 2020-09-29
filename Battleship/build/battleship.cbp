@@ -93,10 +93,16 @@
 		<Unit filename="/media/sf_ARPRO_Labs/Open_projects/Battleship/include/player.h">
 			<Option target="battleship"/>
 		</Unit>
+		<Unit filename="/media/sf_ARPRO_Labs/Open_projects/Battleship/include/utils.h">
+			<Option target="battleship"/>
+		</Unit>
 		<Unit filename="/media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp">
 			<Option target="battleship"/>
 		</Unit>
 		<Unit filename="/media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp">
+			<Option target="battleship"/>
+		</Unit>
+		<Unit filename="/media/sf_ARPRO_Labs/Open_projects/Battleship/src/utils.cpp">
 			<Option target="battleship"/>
 		</Unit>
 		<Unit filename="/media/sf_ARPRO_Labs/Open_projects/Battleship/CMakeLists.txt">

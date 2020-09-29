@@ -4,10 +4,14 @@
 CMakeFiles/battleship.dir/main.o: ../include/boat.h
 CMakeFiles/battleship.dir/main.o: ../include/cell.h
 CMakeFiles/battleship.dir/main.o: ../include/player.h
+CMakeFiles/battleship.dir/main.o: ../include/utils.h
 CMakeFiles/battleship.dir/main.o: ../main.cpp
 
 CMakeFiles/battleship.dir/src/player.o: ../include/boat.h
 CMakeFiles/battleship.dir/src/player.o: ../include/cell.h
 CMakeFiles/battleship.dir/src/player.o: ../include/player.h
 CMakeFiles/battleship.dir/src/player.o: ../src/player.cpp
+
+CMakeFiles/battleship.dir/src/utils.o: ../include/utils.h
+CMakeFiles/battleship.dir/src/utils.o: ../src/utils.cpp
 

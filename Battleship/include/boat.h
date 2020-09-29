@@ -43,7 +43,7 @@ struct Boat {
         isDestroyed = _isDestroyed;
     }
 
-    BoatType getBoatType() {
+    BoatType &getBoatType() {
         return boatType;
     }
     void setBoatType(BoatType _boatType) {

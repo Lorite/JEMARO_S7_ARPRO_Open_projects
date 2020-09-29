@@ -11,7 +11,7 @@ struct Cell {
         pos_x = _pos_x;
         pos_y = _pos_y;
         isHit = _isHit;
-        boat = _boat;
+        boat = &_boat;
     }
 
     char display(bool showBoats) const {
@@ -21,21 +21,27 @@ struct Cell {
             if (!showBoats)
                 return 'o';
             else
-                return boat.display();
+                return boat->display();
 
     }
 
+    bool getIsHit() {
+        return isHit;
+    }
+    void setIsHit(bool _isHit) {
+        this->isHit = _isHit;
+    }
     Boat getBoat() {
-        return boat;
+        return *boat;
     }
     void setBoat(Boat &_boat) {
-        this->boat = _boat;
+        boat = &_boat;
     }
 
 private:
     int pos_x, pos_y;
     bool isHit;
-    Boat boat;
+    Boat *boat;
 };
 
 #endif // CELL_H

@@ -7,4 +7,5 @@ add_executable(battleship
     include/player.h    src/player.cpp
     include/boat.h
     include/cell.h
+    include/utils.h     src/utils.cpp
  )

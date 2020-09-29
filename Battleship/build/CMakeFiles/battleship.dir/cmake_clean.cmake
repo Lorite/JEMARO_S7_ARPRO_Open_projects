@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/battleship.dir/main.o"
   "CMakeFiles/battleship.dir/src/player.o"
+  "CMakeFiles/battleship.dir/src/utils.o"
   "battleship"
   "battleship.pdb"
 )

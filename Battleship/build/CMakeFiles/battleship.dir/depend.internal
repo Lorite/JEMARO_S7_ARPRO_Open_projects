@@ -5,9 +5,13 @@ CMakeFiles/battleship.dir/main.o
  ../include/boat.h
  ../include/cell.h
  ../include/player.h
+ ../include/utils.h
  /media/sf_ARPRO_Labs/Open_projects/Battleship/main.cpp
 CMakeFiles/battleship.dir/src/player.o
  ../include/boat.h
  ../include/cell.h
  ../include/player.h
  /media/sf_ARPRO_Labs/Open_projects/Battleship/src/player.cpp
+CMakeFiles/battleship.dir/src/utils.o
+ ../include/utils.h
+ /media/sf_ARPRO_Labs/Open_projects/Battleship/src/utils.cpp

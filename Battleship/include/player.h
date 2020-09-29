@@ -15,11 +15,11 @@ public:
     Player();
 
     void placeBoats();
-    void shoot(Player otherPlayer);
+    int shoot(Player &otherPlayer, int posX, int posY); // 0: already tried, 1 miss, 2 hit
     void display(bool showBoats);
     bool hasLost();
 
-    std::vector<Boat> boats;
+    std::vector<Boat*> boats;
     std::array<std::array<Cell, 10>, 10> grid;
 };
 
