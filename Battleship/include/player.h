@@ -5,7 +5,6 @@
 #include <vector>
 #include <cell.h>
 #include <boat.h>
-#include <cell.h>
 #include <iostream>
 #include <random>
 

@@ -1,9 +1,9 @@
 #ifndef BOAT_H
 #define BOAT_H
 
-#include <cell.h>
 #include <array>
 #include <vector>
+#include <cell.h>
 #include <string>
 #include <iostream>
 
@@ -16,6 +16,7 @@ enum class BoatType {
     NONE
 };
 
+struct Cell;
 struct Boat {
     Boat(){};
 
@@ -37,6 +38,9 @@ struct Boat {
     }
 
     bool getIsDestroyed() {
+        /*for (auto boatPart : boatParts) {
+
+        }*/
         return isDestroyed;
     }
     void setIsDestroyed(bool _isDestroyed) {
@@ -51,14 +55,21 @@ struct Boat {
     }
 
     int getLength() {
-        return length;
+        return lengthLeft;
     }
-    void setLength(const int &_length) {
-        length = _length;
+    void setLength(const int &_lengthLeft) {
+        lengthLeft = _lengthLeft;
+    }
+    int &decreaseLength() {
+        return --lengthLeft;
+    }
+
+    void addBoatPart(Cell *_boatPart) {
+        boatParts.push_back(_boatPart);
     }
 
     std::string toString() {
-        return "Boat type: " + std::string(1, display()) + ". Length: " + std::to_string(length);
+        return "Boat type: " + std::string(1, display()) + ". Length left: " + std::to_string(lengthLeft);
     }
 
     static std::vector<std::pair<BoatType, int>> allBoatLengths() {
@@ -74,7 +85,9 @@ struct Boat {
 private:
     bool isDestroyed = false;
     BoatType boatType = BoatType::NONE;
-    int length;
+    int lengthLeft;
+    std::vector<Cell*> boatParts;
+
 };
 
 #endif // BOAT_H

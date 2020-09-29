@@ -40,13 +40,13 @@ void Player::placeBoats(){
                 cellXGenerated = dice10(generator);
                 cellYGenerated = std::uniform_int_distribution<int>{0, 9 - _length}(generator);
                 for (int i = 0; i < _length; i++) { // check OK
-                    posGeneratedOK &= (grid.at(cellYGenerated + i).at(cellXGenerated).getBoat().getBoatType() == BoatType::NONE);
+                    posGeneratedOK &= (grid.at(cellYGenerated + i).at(cellXGenerated).getBoat()->getBoatType() == BoatType::NONE);
                 }
             } else {
                 cellXGenerated = std::uniform_int_distribution<int>{0, 9 - _length}(generator);
                 cellYGenerated = dice10(generator);
                 for (int i = 0; i < _length; i++) { // check OK
-                    posGeneratedOK &= (grid.at(cellYGenerated).at(cellXGenerated + i).getBoat().getBoatType() == BoatType::NONE);
+                    posGeneratedOK &= (grid.at(cellYGenerated).at(cellXGenerated + i).getBoat()->getBoatType() == BoatType::NONE);
                 }
             }
 
@@ -70,14 +70,19 @@ void Player::placeBoats(){
 
 int Player::shoot(Player &otherPlayer, int posX, int posY){
     Cell &tempCell = otherPlayer.grid.at(posY).at(posX);
-    if (tempCell.getIsHit())
+    if (tempCell.getIsHit()) // hit already hit cell
         return 0;
     else {
         tempCell.setIsHit(true);
-        if (tempCell.getBoat().getBoatType() == BoatType::NONE)
+        if (tempCell.getBoat()->getBoatType() == BoatType::NONE) // hit water
             return 1;
-        else
-            return 2;
+        else { // hit boat
+            if (tempCell.getBoat()->decreaseLength() == 0) { // destroy boat
+                tempCell.getBoat()->setIsDestroyed(true);
+                return 3;
+            } else // boat not destroyed
+                return 2;
+        }
     }
 
 
@@ -94,5 +99,9 @@ void Player::display(bool showBoats){
 }
 
 bool Player::hasLost(){
-    return false;
+    for (auto boat : boats)
+        if (!boat->getIsDestroyed())
+            return false;
+
+    return true;
 }

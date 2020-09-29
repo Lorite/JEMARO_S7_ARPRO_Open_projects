@@ -31,11 +31,12 @@ struct Cell {
     void setIsHit(bool _isHit) {
         this->isHit = _isHit;
     }
-    Boat getBoat() {
-        return *boat;
+    Boat *getBoat() {
+        return boat;
     }
     void setBoat(Boat &_boat) {
         boat = &_boat;
+        boat->addBoatPart(this);
     }
 
 private:

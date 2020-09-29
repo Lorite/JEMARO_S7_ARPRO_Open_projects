@@ -11,7 +11,8 @@ int main() {
     bool gameOver = false;
 
     // instructions
-    std::cout << "Welcome to battleship game!!! Remember that top left corner is position 0,0 and bottom left corner is position 9,9." << std::endl << std::endl;
+    std::cout << "Welcome to battleship game!!! Remember that top left corner is position 0,0 and bottom left corner is position 9,9." << std::endl
+              << "Remember that x are columns and y are rows." << std::endl << std::endl;
 
     // set boats' positions
     for (int i = 0; i < players.size(); ++i) {
@@ -80,6 +81,8 @@ int main() {
                             std::cout << "You hit the water." << std::endl;
                         else if (shotOK == 2)
                             std::cout << "You hit a boat!" << std::endl;
+                        else if (shotOK == 3)
+                            std::cout << "You destroyed a boat!" << std::endl;
                     }
                 } while(shotOK == 0);
 
