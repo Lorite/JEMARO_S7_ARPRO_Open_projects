@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/sf_ARPRO_Labs/Open_projects/Algorithm 1D function minimization/Alg1Dfuncmin.cpp
+iostream
+-
+math.h
+-
+
