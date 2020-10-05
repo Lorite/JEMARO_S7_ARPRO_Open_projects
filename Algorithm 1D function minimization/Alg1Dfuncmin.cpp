@@ -18,13 +18,14 @@ double Alg1Dfuncmin(double startingX, int iterMax, double gainLambda, double min
     while((iter < iterMax) && (abs(gradG) > minGradinentGm)) {
         gradG = fexpressionDer(minX, 0.00001);
         minX -= gainLambda*gradG;
-        //std::cout << minX << std::endl;
+        std::cout << minX << std::endl;
         iter++;
     }
     return minX;
 }
 
 int main() {
-    std::cout << "The minimum is " << Alg1Dfuncmin(0, 100000, 0.0001, 0.000001) << ".";
+    double minX = Alg1Dfuncmin(0, 100000, 0.0001, 0.000001);
+    std::cout << "The minimum is " << minX << "." << std::endl;
 	return 0;
 } 
