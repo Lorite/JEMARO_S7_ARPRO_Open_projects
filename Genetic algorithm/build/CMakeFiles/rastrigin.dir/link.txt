@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/rastrigin.dir/main.cpp.o CMakeFiles/rastrigin.dir/xy.cpp.o  -o rastrigin 
